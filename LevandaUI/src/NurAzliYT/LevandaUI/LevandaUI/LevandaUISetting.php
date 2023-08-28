@@ -7,13 +7,13 @@ namespace LevandaUI\LevandaUI;
 use pocketmine\utils\Config;
 use function in_array;
 
-class ScoreHudSettings{
+class LevandaUISettings{
 
 	public const PREFIX = "§8[§l§6S§eH§r§8]§r ";
 
-	private static ?ScoreHud $plugin;
+	private static ?LevandaUI $plugin;
 	private static ?Config $config;
-	private static ?Config $scorehud;
+	private static ?Config $levandaui;
 
 	private function __construct(){}
 
@@ -34,7 +34,7 @@ class ScoreHudSettings{
 	 */
 
 	public static function getLineUpdateMode(): string{
-		return (string) strtolower(self::$config->getNested("line-update-mode", "single"));
+		return (string) strtolower(self::$config->getNested("from", "single"));
 	}
 
 	public static function isSingleLineUpdateMode(): bool{
