@@ -1,5 +1,5 @@
 name: LevandaUI
-main: NurAzliYT/LevandaUI/LevandaUI;
+main: LevandaUI/src/NurAzliYT/LevandaUI/LevandaUI;.php
 version: 1.0.0
 api: 5.0.0
 author: NurAzliYT
