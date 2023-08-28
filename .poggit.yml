@@ -1,0 +1,10 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/NurAzliYT/LEVANDA
+build-by-default: true
+branches:
+- main
+projects:
+  FormAPI:
+    path: FormAPI/
+  LevandaUI:
+    path: LevandaUI/
+...
