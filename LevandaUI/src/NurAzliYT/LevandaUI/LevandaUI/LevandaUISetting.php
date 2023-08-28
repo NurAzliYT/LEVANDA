@@ -2,7 +2,7 @@
 declare(strict_types = 1);
 
 
-namespace Ifera\ScoreHud;
+namespace LevandaUI\LevandaUI;
 
 use pocketmine\utils\Config;
 use function in_array;
