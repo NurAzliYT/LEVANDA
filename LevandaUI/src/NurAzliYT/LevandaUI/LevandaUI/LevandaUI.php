@@ -1,16 +1,16 @@
 <?php
 
-namespace NurAzliYT/LevandaUI;
+namespace NurAzliYT\LevandaUI;
 
-use pocketmine/player/Player;
-use pocketmine/plugin/PluginBase;
+use pocketmine\player\Player;
+use pocketmine\plugin\PluginBase;
 
-use pocketmine/command/CommandSender;
-use pocketmine/command/Command;
+use pocketmine\command\CommandSender;
+use pocketmine\command\Command;
 
-use pocketmine/item/VanillaItems;
+use pocketmine\item\VanillaItems;
 
-use jojoe77777/formapi/SimpleForm;
+use jojoe77777\formapi\SimpleForm;
 class LevandaUI extends PluginBase{
     public function onEnable():void{
 
