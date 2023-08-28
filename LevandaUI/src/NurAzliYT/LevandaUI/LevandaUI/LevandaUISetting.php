@@ -34,11 +34,11 @@ class LevandaUISettings{
 	 */
 
 	public static function getLineUpdateMode(): string{
-		return (string) strtolower(self::$config->getNested("from", "single"));
+		return (string) strtolower(self::$config->getButton("from", "single"));
 	}
 
 	public static function isSingleLineUpdateMode(): bool{
-		return self::getLineUpdateMode() === "single";
+		return self::getTitle() === "title";
 	}
 
 	public static function isTagFactoryEnabled(): bool {
