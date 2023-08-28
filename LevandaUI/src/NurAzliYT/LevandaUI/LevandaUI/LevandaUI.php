@@ -27,7 +27,7 @@ class LevandaUI extends PluginBase{
     }
 
   public function onSimpleForm(Player $player):void{
-      $form = new SimpleForm(funtion (Player $player, $data)){
+      $form = new SimpleForm(function (Player $player, $data)){
           if(!isset($data)){
               return;
           }
