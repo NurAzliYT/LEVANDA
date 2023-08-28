@@ -6,8 +6,9 @@ author: NurAzliYT
 description: "Menu For Your Server"
 
 commands:
-  ui:
-    description: ""
+  lui:
+  levandaui:
+    description: "Open LevandaUI Menu"
     permission: levandaui.ui
 
 permissions:
