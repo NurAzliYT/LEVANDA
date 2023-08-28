@@ -31,7 +31,7 @@ class LevandaUI extends PluginBase{
           if(!isset($data)){
               return;
           }
-          
+         }
           switch ($data){
               case 0;
                   $inv = $player->getinventory();
