@@ -17,16 +17,16 @@ class LevandaUISettings{
 
 	private function __construct(){}
 
-	public static function init(ScoreHud $plugin): void{
+	public static function init(LevandaUI $plugin): void{
 		self::$plugin = $plugin;
 		self::$config = $plugin->getConfig();
-		self::$scorehud = $plugin->getScoreConfig();
+		self::$levandaui = $plugin->getScoreConfig();
 	}
 
 	public static function destroy(): void{
 		self::$plugin = null;
 		self::$config = null;
-		self::$scorehud = null;
+		self::$levandaui = null;
 	}
 
 	/*
@@ -87,41 +87,17 @@ class LevandaUISettings{
 
 	public static function getDateFormat(): string{
 		return (string) self::$config->getNested("time.format.date", "d-m-Y");
-	}
-
-	/*
-	 * Settings from scorehud.yml
-	 */
-
-	public static function areFlickeringTitlesEnabled(): bool{
-		return (bool) self::$scorehud->getNested("titles.flicker", false);
-	}
-
-	public static function getFlickerRate(): int{
-		return ((int) self::$scorehud->getNested("titles.period", 5)) * 20;
-	}
-
-	public static function getTitles(): array{
-		return (array) self::$scorehud->getNested("titles.lines", []);
-	}
-
-	public static function getTitle(): string{
-		return (string) self::$scorehud->getNested("titles.title", "§l§aServer §dName");
-	}
-
-	public static function getDefaultBoard(): array{
-		return (array) self::$scorehud->get("default-board", []);
-	}
+        }
 
 	/**
 	 * Will return an array indexed by world name with their score lines.
 	 */
 	public static function getScoreboards(): array{
-		return (array) self::$scorehud->get("scoreboards", []);
+		return (array) self::$levandaui->get("scoreboards", []);
 	}
 
 	public static function getScoreboard(string $world): array{
-		return (array) self::$scorehud->getNested("scoreboards." . $world . ".lines", []);
+		return (array) self::$levandaui->getNested("scoreboards." . $world . ".lines", []);
 	}
 
 	public static function worldExists(string $world): bool{
