@@ -1,6 +1,6 @@
 <?php
 
-namespace LevandaUI/src/NurAzliYT/LevandaUI/LevandaUI;.php
+namespace NurAzliYT/LevandaUI;
 
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
@@ -12,6 +12,7 @@ use pocketmine\item\VanillaItems;
 
 use jojoe77777\formapi\SimpleForm;
 class LevandaUI extends PluginBase{
+    
     public function onEnable():void{
 
     }
@@ -27,15 +28,14 @@ class LevandaUI extends PluginBase{
     }
 
   public function onSimpleForm(Player $player):void{
-      $form = new SimpleForm(function (Player $player, $data)){
+      $form = new SimpleForm(function (Player $player, $data){
           if(!isset($data)){
               return;
           }
-         }
           switch ($data){
               case 0;
                   $inv = $player->getinventory();
-                  $inv->setitem(index:0, VanillaItems::DIAMOND()->setCount(64));
+                  $inv->setitem(index: 0, VanillaItems::DIAMOND()->setCount(64));
                   $player->SendMessage("Kamu Telah Mendapatkan 64 Permata!");
                   break;
               case 1;
