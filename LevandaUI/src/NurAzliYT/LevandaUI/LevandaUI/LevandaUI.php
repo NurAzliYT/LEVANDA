@@ -1,6 +1,6 @@
 <?php
 
-namespace LevandaUI\src\NurAzliYT\LevandaUI;
+namespace NurAzliYT\LevandaUI;
 
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
