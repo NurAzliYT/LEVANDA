@@ -28,7 +28,7 @@ class LevandaUI extends PluginBase{
     }
 
   public function onSimpleForm(Player $player):void
-      $form = new SimpleForm(function (Player $player, $data){
+      $form = new SimpleForm(function (Player $player, $data)
           if(!isset($data)){
               return;
           }
@@ -44,7 +44,7 @@ class LevandaUI extends PluginBase{
                   $player->SendMessage("Kamu Telah Mendapatkan 64 Emas!");
                   
           }
-      });
+      );
       $form->setTitle("LevandaUI");
       $form->setContent("Edit Di config.yml kalau ada");
-      $form->addButton("OK")
+      $form->addButton("OK");
