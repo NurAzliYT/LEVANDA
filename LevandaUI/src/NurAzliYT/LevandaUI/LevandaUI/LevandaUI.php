@@ -27,8 +27,8 @@ class LevandaUI extends PluginBase{
         return true;
     }
 
-  public function onSimpleForm(Player $player):void
-      $form = new SimpleForm(function (Player $player, $data)
+  public function onSimpleForm(Player $player):void{
+      $form = new SimpleForm(function (Player $player, $data){
           if(!isset($data)){
               return;
           }
@@ -48,3 +48,5 @@ class LevandaUI extends PluginBase{
       $form->setTitle("LevandaUI");
       $form->setContent("Edit Di config.yml kalau ada");
       $form->addButton("OK");
+  }
+}
