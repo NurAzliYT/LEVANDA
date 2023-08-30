@@ -1,6 +1,6 @@
 <?php
 
-namespace NurAzliYT\LevandaUI\LevandaUI;
+namespace LevandaUI/src/NurAzliYT/LevandaUI/LevandaUI.php
 
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
@@ -49,4 +49,3 @@ class LevandaUI extends PluginBase{
       $form->setContent("Edit Di config.yml kalau ada");
       $form->addButton("OK")
   }
-}
