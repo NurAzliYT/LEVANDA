@@ -48,4 +48,3 @@ class LevandaUI extends PluginBase{
       $form->setTitle("LevandaUI");
       $form->setContent("Edit Di config.yml kalau ada");
       $form->addButton("OK")
-  }
