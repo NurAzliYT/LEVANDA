@@ -46,7 +46,9 @@ class LevandaUI extends PluginBase{
           }
       );
       $form->setTitle("LevandaUI");
-      $form->setContent("Edit Di config.yml kalau ada");
+      $form->setContent("Claim Your Rewards");
       $form->addButton("OK");
+      $form->addButtom("Cencel")
+      $player->sendForm($form);
   }
 }
