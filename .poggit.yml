@@ -5,6 +5,7 @@ branches:
 projects:
   FormAPI:
     path: FormAPI/
+    icon: FormAPI/icon.png
   LevandaUI:
     path: LevandaUI/
 ...
