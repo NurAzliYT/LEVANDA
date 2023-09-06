@@ -2,7 +2,7 @@
 
 namespace jojoe77777\FormAPI\FormAPISettings;
 
-use jojoe\FormAPI\SimpleForm
+use jojoe\FormAPI\SimpleForm;
 
 class FormAPISettings{
 }
