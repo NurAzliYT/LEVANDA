@@ -2,7 +2,6 @@
 
 namespace jojoe77777\FormAPI\FormAPISettings;
 
-use jojoe\FormAPI\SimpleForm;
 use pocketmine\utils\Config;
 use function in_array;
 
@@ -14,7 +13,7 @@ class FormAPISettings{
 
 	private function __construct(){}
 
-	public static function init(ScoreHud $plugin): void{
+	public static function init(FormAPI $plugin): void{
 		self::$plugin = $plugin;
 		self::$config = $plugin->getConfig();
 		self::$formapi= $plugin->getFormConfig();
