@@ -6,14 +6,15 @@ author: NurAzliYT
 description: "Menu For Your Server"
 
 commands:
-  ui:
+  lui:
     description: "Open LevandaUI Menu"
     permission: levandaui.ui
 
 permissions:
   levandaui.ui:
     default: true
-    
+
+commands:
   levandaui:
     description: "Open LevandaUI Menu"
     permission: levandaui.ui
