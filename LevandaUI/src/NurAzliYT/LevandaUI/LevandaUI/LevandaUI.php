@@ -4,13 +4,11 @@ namespace NurAzliYT\LevandaUI;
 
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
-
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
-
 use pocketmine\item\VanillaItems;
+use jojoe77777\FormAPI\SimpleForm;
 
-use jojoe77777\formapi\SimpleForm;
 class LevandaUI extends PluginBase{
     
     public function onEnable():void{
@@ -19,7 +17,7 @@ class LevandaUI extends PluginBase{
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args):bool{
 
-        if($command->getName() == "ui"){
+        if($command->getName() == "lui"){
             if($sender instanceof Player){
                 $this->onSimpleForm($sender);
             }
