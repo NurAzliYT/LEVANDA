@@ -1,18 +1,9 @@
 name: LevandaUI
-main: NurAzliYT\LevandaUI\LevandaUI
+main: NurAzliYT\LevandaUI\LevandaUI\LevamdaUI
 version: 1.0.0
 api: 5.0.0
 author: NurAzliYT
 description: "Menu For Your Server"
-
-commands:
-  lui:
-    description: "Open LevandaUI Menu"
-    permission: levandaui.ui
-
-permissions:
-  levandaui.ui:
-    default: true
 
 commands:
   levandaui:
