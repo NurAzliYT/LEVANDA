@@ -38,15 +38,15 @@ class LevandaUI extends PluginBase{
                   break;
               case 1;
                   $inv = $player->getinventory();
-                  $inv->setitem(index:0, VanillaItems::GOLD()->setCount(64));
-                  $player->SendMessage("Kamu Telah Mendapatkan 64 Emas!");
+                  $inv->setitem(index: 0, VanillaItems::DIAMOND()->setCount(43));
+                  $player->SendMessage("Kamu Telah Mendapatkan 64 Permata!");
                   
           }
       );
       $form->setTitle("LevandaUI");
       $form->setContent("Claim Your Rewards");
       $form->addButton("OK");
-      $form->addButtom("Cencel")
+      $form->addButtom("Cencel");
       $player->sendForm($form);
   }
 }
