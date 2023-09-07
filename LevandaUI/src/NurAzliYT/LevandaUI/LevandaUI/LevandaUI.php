@@ -40,7 +40,7 @@ class LevandaUI extends PluginBase{
                   $inv = $player->getinventory();
                   $inv->setitem(index: 0, VanillaItems::DIAMOND()->setCount(43));
                   $player->SendMessage("Kamu Telah Mendapatkan 64 Permata!");
-                  
+                  break;
           }
       );
       $form->setTitle("LevandaUI");
