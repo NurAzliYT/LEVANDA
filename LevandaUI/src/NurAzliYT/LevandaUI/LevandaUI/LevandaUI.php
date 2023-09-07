@@ -1,6 +1,6 @@
 <?php
 
-namespace NurAzliYT\LevandaUI;
+namespace NurAzliYT\LevandaUI\LevandaUI;
 
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
@@ -30,6 +30,7 @@ class LevandaUI extends PluginBase{
           if(!isset($data)){
               return;
           }
+      }
           switch ($data){
               case 0;
                   $inv = $player->getinventory();
