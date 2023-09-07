@@ -33,13 +33,13 @@ class LevandaUI extends PluginBase{
           }
           switch ($data){
               case 0;
-                  $inv = $player->getinventory();
-                  $inv->setitem(index: 0, VanillaItems::DIAMOND()->setCount(64));
+                  $inv = $player->getInventory();
+                  $inv->setItem(index: 0, VanillaItems::DIAMOND()->setCount(64));
                   $player->SendMessage("Kamu Telah Mendapatkan 64 Berlian!");
                   break;
               case 1;
-                  $inv = $player->getinventory();
-                  $inv->setitem(index: 0, VanillaItems::DIAMOND_ORE()->setCount(43));
+                  $inv = $player->getInventory();
+                  $inv->setItem(index: 0, VanillaItems::DIAMOND_ORE()->setCount(43));
                   $player->SendMessage("Kamu Telah Mendapatkan 64 Berlian Metah!");
                   break;
           }
