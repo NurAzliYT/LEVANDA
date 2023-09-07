@@ -4,8 +4,10 @@ namespace NurAzliYT\LevandaUI\LevandaUI;
 
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
+
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
+
 use pocketmine\item\VanillaItems;
 use jojoe77777\FormAPI\SimpleForm;
 
@@ -29,7 +31,6 @@ class LevandaUI extends PluginBase{
           if(!isset($data)){
               return;
           }
-      }
           switch ($data){
               case 0;
                   $inv = $player->getinventory();
@@ -42,7 +43,7 @@ class LevandaUI extends PluginBase{
                   $player->SendMessage("Kamu Telah Mendapatkan 64 Permata!");
                   break;
           }
-      );
+      });
       $form->setTitle("LevandaUI");
       $form->setContent("Claim Your Rewards");
       $form->addButton("OK");
