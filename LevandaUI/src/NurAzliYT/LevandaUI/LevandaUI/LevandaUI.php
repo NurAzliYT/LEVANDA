@@ -14,17 +14,6 @@ class LevandaUI extends PluginBase{
     public function onEnable():void{
 
     }
-    public function saveResources(){
-        $form = $this->getDataFolder() . "LevandaUI/";
-        if (!is_dir($form)) {
-            mkdir($form);
-        }
-        if (!is_dir($this->getDataFolder() . "temp/")) {
-            mkdir($this->getDataFolder() . "temp/");
-        }
-        if (!is_dir($this->getDataFolder() . "NurAzliYT/")) {
-            mkdir($this->getDataFolder() . "NurAzliYT/");
-    }
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args):bool{
 
         if($command->getName() == "levandaui"){
