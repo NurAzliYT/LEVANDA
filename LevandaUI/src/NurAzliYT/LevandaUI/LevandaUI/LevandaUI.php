@@ -17,7 +17,7 @@ class LevandaUI extends PluginBase{
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args):bool{
 
-        if($command->getName() == "lui"){
+        if($command->getName() == "levandaui"){
             if($sender instanceof Player){
                 $this->onSimpleForm($sender);
             }
