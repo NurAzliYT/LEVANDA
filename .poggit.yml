@@ -3,9 +3,6 @@ build-by-default: true
 branches:
 - main
 projects:
-  FormAPI:
-    path: FormAPI/
-    icon: FormAPI/icon.png
   LevandaUI:
     path: LevandaUI/
 ...
