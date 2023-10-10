@@ -38,8 +38,8 @@ class LevandaUI extends PluginBase{
                     break;
                 case 1:
                     $inv = $player->getInventory();
-                    $inv->setItem(0, VanillaItems::GOLD_INGOT()->setCount(43));
-                    $player->sendMessage("Kamu Telah Mendapatkan 43 Gold!");
+                    $inv->setItem(0, VanillaItems::EMERALD()->setCount(43));
+                    $player->sendMessage("Kamu Telah Mendapatkan 43 Zamrud!");
                     break;
             }
         });
